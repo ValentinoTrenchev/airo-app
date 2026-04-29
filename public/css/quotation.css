@@ -1,0 +1,119 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: system-ui, sans-serif;
+    background: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    padding: 2rem;
+    width: 100%;
+    max-width: 480px;
+}
+
+h1 { font-size: 1.4rem; margin-bottom: 1.5rem; color: #1a1a2e; }
+h2 { font-size: 1rem; margin-bottom: 1.25rem; color: #1a1a2e; }
+
+.form-group { margin-bottom: 1rem; }
+
+label {
+    display: block;
+    font-size: .85rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: .35rem;
+}
+
+input, select {
+    width: 100%;
+    padding: .55rem .75rem;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    font-size: .95rem;
+    color: #1a1a2e;
+    background: #fff;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79,70,229,.15);
+}
+
+.field-error {
+    color: #dc2626;
+    font-size: .8rem;
+    margin-top: .25rem;
+    display: none;
+}
+
+.field-error.visible { display: block; }
+
+.btn {
+    width: 100%;
+    padding: .65rem;
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: .5rem;
+    transition: background .2s;
+}
+
+.btn:hover:not(:disabled) { background: #4338ca; }
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+
+.alert {
+    padding: .75rem 1rem;
+    border-radius: 6px;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.alert.visible { display: block; }
+.alert-error { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
+.alert-success { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+
+.logout-link {
+    display: block;
+    text-align: right;
+    font-size: .8rem;
+    color: #6b7280;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.result-box {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    display: none;
+}
+
+.result-box.visible { display: block; }
+
+.result-box p {
+    font-size: 1rem;
+    color: #166534;
+    margin-bottom: .4rem;
+}
+
+.result-box p:last-child { margin-bottom: 0; }
+.result-box strong { font-size: 1.15rem; }
+
+.hidden { display: none; }
